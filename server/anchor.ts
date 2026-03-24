@@ -14,7 +14,7 @@ dotenv.config();
 const idlPath = path.resolve(__dirname, '../src/lib/idl.json');
 const idl = JSON.parse(fs.readFileSync(idlPath, 'utf-8'));
 
-const PROGRAM_ID = new PublicKey('Animals11111111111111111111111111111111111');
+const PROGRAM_ID = new PublicKey('Animais11111111111111111111111111111111111');
 
 export const getAdminKeypair = () => {
   const secretKeyString = process.env.ADMIN_SECRET_KEY;

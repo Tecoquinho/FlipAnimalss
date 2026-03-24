@@ -305,7 +305,7 @@ export default function App() {
       
       socketRef.current?.emit('place_bet', {
         roomId: activeRoom.id,
-        user: publicKey.toBase58().slice(0, 8) + '...',
+        user: publicKey.toBase58(),
         amount: betAmount,
         bichoId: selectedBicho.id,
         txSignature: tx
@@ -411,7 +411,7 @@ export default function App() {
                       <div className="flex items-center gap-3">
                         <div className="text-xl">{bet.bicho.emoji}</div>
                         <div>
-                          <p className="text-[10px] font-bold text-zinc-300">{bet.user}</p>
+                          <p className="text-[10px] font-bold text-zinc-300">{bet.user.slice(0, 8)}...</p>
                           <p className="text-[8px] text-zinc-500 font-mono uppercase tracking-tighter">{t('betOn')} {bet.bicho.name}</p>
                         </div>
                       </div>

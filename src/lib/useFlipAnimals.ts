@@ -11,7 +11,7 @@ import {
 import { PublicKey } from '@solana/web3.js';
 import idl from './idl.json';
 
-const PROGRAM_ID = new PublicKey('Animals11111111111111111111111111111111111');
+const PROGRAM_ID = new PublicKey('Animais11111111111111111111111111111111111');
 
 export const useFlipAnimals = () => {
   const { connection } = useConnection();
