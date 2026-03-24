@@ -28,7 +28,7 @@ import { io, Socket } from 'socket.io-client';
 import { useFlipAnimals } from './lib/useFlipAnimals';
 
 // ENDEREÇO DA TESOURARIA
-const TREASURY_WALLET = new PublicKey('7vN6fXp7vN6fXp7vN6fXp7vN6fXp7vN6fXp7vN6fXp7v');
+const TREASURY_WALLET = new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA');
 
 type Language = 'en-US' | 'pt-BR' | 'pt-PT';
 
